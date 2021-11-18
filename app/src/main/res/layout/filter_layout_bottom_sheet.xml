@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/carView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardView:cardCornerRadius="8dp"
+    cardView:cardElevation="8dp"
+    android:layout_margin="16dp"
+    cardView:cardBackgroundColor="@color/colorBlack20">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="774dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imvBsIndicator"
+                    android:layout_width="40dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_bottom_sheet_indicator"
+                    cardView:layout_constraintEnd_toEndOf="parent"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextBold.Heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="22dp"
+                    android:text="Saring Produk"
+                    cardView:layout_constraintBottom_toBottomOf="parent"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextSemiBold.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Reset"
+                    android:textColor="@color/colorRed40"
+                    cardView:layout_constraintBottom_toBottomOf="parent"
+                    cardView:layout_constraintEnd_toEndOf="parent"
+                    cardView:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView1"
+                    style="@style/TextBold.Heading2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bottom_sheet_indicator"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="9dp"
+                    android:text="LOKASI STOK BARANG"
+                    android:textColor="@color/colorBlack50"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    style="@style/TextRegular.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Semua"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toBottomOf="@+id/materialTextView1" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    style="@style/TextRegular.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Toko Indomaret"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toBottomOf="@+id/radioButton1" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    style="@style/TextRegular.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Gudang"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView2"
+                    style="@style/TextBold.Heading2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bottom_sheet_indicator"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="9dp"
+                    android:text="HARGA"
+                    android:textColor="@color/colorBlack50"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    style="@style/TextRegular.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Semua"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    style="@style/TextRegular.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Normal"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toBottomOf="@+id/radioButton4" />
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    style="@style/TextRegular.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Promosi"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toBottomOf="@+id/radioButton5" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView3"
+                    style="@style/TextBold.Heading2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bottom_sheet_indicator"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="9dp"
+                    android:text="RENTANG HARGA"
+                    android:textColor="@color/colorBlack50"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toBottomOf="@+id/radioButton6" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/priceRangeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toBottomOf="@id/materialTextView3">
+
+                    <EditText
+                        android:id="@+id/editTextHargaMinimum"
+                        style="@style/ButtonOutlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="Minimum"
+                        cardView:layout_constraintBottom_toBottomOf="parent"
+                        cardView:layout_constraintEnd_toStartOf="@+id/imvBsIndicator1"
+                        cardView:layout_constraintHorizontal_bias="0.5"
+                        cardView:layout_constraintHorizontal_chainStyle="spread_inside"
+                        cardView:layout_constraintStart_toStartOf="parent"
+                        cardView:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imvBsIndicator1"
+                        android:layout_width="12dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/bg_bottom_sheet_indicator"
+
+                        cardView:layout_constraintBottom_toBottomOf="parent"
+                        cardView:layout_constraintEnd_toStartOf="@+id/editTextHargaMaksimum"
+                        cardView:layout_constraintHorizontal_bias="0.5"
+                        cardView:layout_constraintStart_toEndOf="@+id/editTextHargaMinimum"
+                        cardView:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/editTextHargaMaksimum"
+                        style="@style/ButtonOutlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:hint="Maksimum"
+                        cardView:layout_constraintBottom_toBottomOf="parent"
+                        cardView:layout_constraintEnd_toEndOf="parent"
+                        cardView:layout_constraintHorizontal_bias="0.5"
+                        cardView:layout_constraintStart_toEndOf="@+id/imvBsIndicator1"
+                        cardView:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/backgroundTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bottom_sheet_indicator"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toBottomOf="@+id/priceRangeLayout" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/filterKategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    cardView:layout_constraintStart_toStartOf="parent"
+                    cardView:layout_constraintTop_toBottomOf="@id/backgroundTextView1">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvOrderNumber"
+                        style="@style/TextBold.Heading1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_12dp"
+                        android:layout_marginTop="@dimen/dimen_8dp"
+                        android:text="Kategori"
+                        cardView:layout_constraintBottom_toTopOf="@+id/tvOrderAccepted"
+                        cardView:layout_constraintEnd_toStartOf="@+id/tvOrderProcess"
+                        cardView:layout_constraintHorizontal_bias="0.016"
+                        cardView:layout_constraintStart_toStartOf="parent"
+                        cardView:layout_constraintTop_toTopOf="parent"
+                        cardView:layout_constraintVertical_chainStyle="spread" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvOrderAccepted"
+                        style="@style/TextRegular.Body2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_12dp"
+                        android:text="Makanan, Minuman, Kebutuhan Pokok ..."
+                        cardView:layout_constraintBottom_toBottomOf="parent"
+                        cardView:layout_constraintEnd_toStartOf="@+id/tvOrderProcess"
+                        cardView:layout_constraintHorizontal_bias="0.0"
+                        cardView:layout_constraintStart_toStartOf="@+id/tvOrderNumber"
+                        cardView:layout_constraintTop_toBottomOf="@+id/tvOrderNumber" />
+
+                    <TextView
+                        android:id="@+id/tvOrderProcess"
+                        style="@style/ButtonContainedRound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        android:text="12"
+                        cardView:layout_constraintBottom_toBottomOf="@+id/ivChevronRight"
+                        cardView:layout_constraintEnd_toStartOf="@+id/ivChevronRight"
+                        cardView:layout_constraintTop_toTopOf="@+id/ivChevronRight" />
+
+                    <ImageView
+                        android:id="@+id/ivChevronRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_24dp"
+                        android:layout_marginEnd="@dimen/dimen_12dp"
+                        android:layout_marginBottom="@dimen/dimen_24dp"
+                        android:src="@drawable/ic_chevron_right"
+                        cardView:layout_constraintBottom_toBottomOf="parent"
+                        cardView:layout_constraintEnd_toEndOf="parent"
+                        cardView:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_bottom_sheet_indicator" />
+
+            <TextView
+                style="@style/ButtonContained"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Tampilkan 116 Produk" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

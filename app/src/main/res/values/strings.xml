@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Bottom Sheet Sorting</string>
+    <string-array name="sorting_category_array">
+        <item>Paling Sesuai</item>
+        <item>Produk Terbaru</item>
+        <item>Produk Terlaku</item>
+        <item>Harga Termurah</item>
+        <item>Harga Termahal</item>
+    </string-array>
+    <string-array name="filter_category_array">
+        <item>Makanan (26)</item>
+        <item>Minuman (8)</item>
+        <item>Kebutuhan Pokok (12)</item>
+        <item>Ibu &amp; Anak (2)</item>
+        <item>Minyak (6)</item>
+        <item>Es Krim (4)</item>
+        <item>Buah Olahan (10)</item>
+        <item>Buah Segar (8)</item>
+        <item>Kesehatan &amp; Kecantikan (6)</item>
+        <item>Shampoo (16)</item>
+        <item>Sabun (4)</item>
+        <item>Teh Instan (12)</item>
+        <item>Kopi Instan (4)</item>
+    </string-array>
+</resources>
